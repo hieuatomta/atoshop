@@ -1,0 +1,94 @@
+
+<div ng-include="'/AtoShop/tcp/header.html'" ng-controller="headerController"></div>
+
+<!-- kết thúc slide bên trái -->
+<div class="main">
+    <!--        kết thúc header-->
+    <!--        start list-product-->
+    <div class="khung list-product max-dai" ng-controller="anhController as vm1">
+        <div class="container">
+            <header>
+                <nav>
+                    <h3 class="cangiua">XUÂN HÈ</h3>
+                    <ul>
+                        <li ng-repeat="data in vm1.data_dulieu">
+                            <button data-dulieu={{data.madulieu}} class="btn chu" ng-bind="data.tendulieu"></button>
+                        </li>
+                    </ul>
+                </nav>
+            </header>
+        </div>
+        <div class="container-fluid list-products">
+            <div class="content">
+                <ul>
+                    <li ng-repeat="anhs in vm1.anh" class={{anhs.Code}}>
+                        <div class="product-img">
+                            <a href=""> <img src={{anhs.link}} alt=""/></a>
+                        </div>
+                        <div class="product-title cangiua">
+                            <a href="" ng-bind="anhs.Name"></a>
+                        </div>
+                        <div class="product-price cangiua">
+                            <span ng-bind="anhs.Price"></span>
+                        </div>
+                    </li>
+                </ul>
+
+            </div>
+        </div>
+        <div class="nhanthongtin">
+            <h3 class="cangiua">Nhận thông tin mới từ BOO</h3>
+            <div class="mail">
+                <input type="text" placeholder="Nhập email của bạn">
+
+            </div>
+            <div class="gioitinh">
+                <div class="nam">
+                    <input type="radio" name="gioitinh"> nam
+                </div>
+                <div class="nu">
+                    <input type="radio" name="gioitinh"> nu
+                </div>
+                <div class="dk">
+                    <button type="button" class="btn btn-info">Đăng ký</button>
+                </div>
+            </div>
+            <div class="menu-icon">
+                <a href="#">
+                    <i class="fa fa-facebook-square" aria-hidden="true"></i>
+                </a>
+                <a href="#">
+                    <i class="fa fa-instagram" aria-hidden="true"></i>
+                </a>
+                <a href="#">
+                    <i class="fa fa-twitter-square" aria-hidden="true"></i>
+                </a>
+            </div>
+
+        </div>
+        <div class="nutall">
+            <button type="button" data-dulieu="all" class="btn btn-info all">Tất cả sản phẩm</button>
+
+        </div>
+
+    </div>
+    <!--        kết thúc list-product -->
+
+    <div class="nutkeo">
+        <i class="fa fa-angle-up" aria-hidden="true"></i>
+    </div>
+    <!--        kết thúc nut-keo -->
+    <div ng-include="'/AtoShop/tcp/footer.html'" ng-controller="headerController"></div>
+
+
+    <!--    kết thúc footer-->
+</div>
+<!--</body>-->
+
+<!--</html>-->
+
+
+<!--            <div class="momo"></div>-->
+<!--            <div class="noidunganh">-->
+<!--                <img src="anh/DSC_1225-2.jpg" alt="">-->
+<!--            </div>-->
