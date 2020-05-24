@@ -1,0 +1,20 @@
+{
+  "id": 1,
+  "link": [{
+    "anh": "http://localhost:1302/WebProducts/anh/anhctsp1.jpeg"
+  }, {
+    "anh": "http://localhost:1302/WebProducts/anh/anhctsp2.jpeg"
+  }, {
+    "anh": "http://localhost:1302/WebProducts/anh/anhsp3.jpeg"
+  }, {
+    "anh": "http://localhost:1302/WebProducts/anh/anhctsp1.jpeg"
+  }, {
+    "anh": "http://localhost:1302/WebProducts/anh/anhctsp1.jpeg"
+  }, {
+    "anh": "http://localhost:1302/WebProducts/anh/anhctsp1.jpeg"
+  }
+  ],
+  "name": "ÁO PHÔNG NỮ LOGO MARVEL LOOSE MARVEL SILVER",
+  "code": "1.2.02.1.02.071.120.01",
+  "price": " 449,000₫"
+}

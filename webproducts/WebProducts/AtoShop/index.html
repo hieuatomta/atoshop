@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="Css/index.css">
+
+    <link rel="stylesheet" href="../lib/css/bootstrap.css">
+    <title>AtoShop</title>
+    <script type="text/javascript" src="../Data/Data.json"></script>
+
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+    <script type="text/javascript" src="../lib/Js/angular-1.7.9/angular.min.js"></script>
+    <script type="text/javascript" src="../lib/Js/angular-cookies.min.js"></script>
+    <script type="text/javascript" src="../lib/Js/angular-translate/angular-translate.min.js"></script>
+    <script type="text/javascript"
+            src="../lib/Js/angular-translate/angular-translate-loader-static-files.min.js"></script>
+    <script type="text/javascript" src="../lib/Js/angular-ui-router.min.js"></script>
+    <script type="text/javascript" src="../lib/Js/ocLazyLoad.min.js"></script>
+    <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/angularjs/1.7.9/angular-route.js"></script>
+
+    <script type="text/javascript"
+            src="../lib/Js/angular-translate/angular-translate-loader-static-files.min.js"></script>
+    <script type="text/javascript"
+            src="https://cdnjs.cloudflare.com/ajax/libs/angular-sanitize/1.7.9/angular-sanitize.min.js"></script>
+
+    <script type="text/javascript"
+            src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-bootstrap/2.5.0/ui-bootstrap-tpls.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script type="text/javascript" src="../lib/Js/isotope.pkgd.min.js"></script>
+
+
+    <script type="text/javascript" src="js/Controller/main.js"></script>
+
+
+    <script type="text/javascript" src="js/Controller/slideLeftController.js"></script>
+    <script type="text/javascript" src="tcp/Shop/chi-tiet/ChitietController.js"></script>
+    <script type="text/javascript" src="js/Controller/homeController.js"></script>
+    <script type="text/javascript" src="js/Controller/resumeController.js"></script>
+    <script type="text/javascript" src="js/Controller/headerController.js"></script>
+    <script type="text/javascript" src="js/Controller/anhController.js"></script>
+    <script type="text/javascript" src="tcp/Shop/gio-hang/giohangController.js"></script>
+
+
+    <link rel="shortcut icon" href="favicon.ico"/>
+</head>
+
+<body ng-app="main">
+<div class="momo"></div>
+<!--BEGIN HEADER-->
+<div class="" ng-include="'tcp/Shop/footer-header/header.html'"></div>
+<!-- END HEADER-->
+
+<!--BEGIN MAIN-->
+<ng-view></ng-view>
+<!--END MAIN-->
+
+<!--END MAIN-->
+<div ng-include="'tcp/Shop/footer-header/footer.html'" class="footer"></div>
+
+<!--    kết thúc footer-->
+
+</body>
+
+</html>
+
+

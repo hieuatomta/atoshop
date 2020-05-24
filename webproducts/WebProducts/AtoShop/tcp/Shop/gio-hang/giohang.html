@@ -1,0 +1,136 @@
+<!--<!DOCTYPE html>-->
+<!--<html>-->
+
+<!--<head>-->
+<!--    <meta charset="utf-8">-->
+<!--    <link rel="stylesheet" href="../../../Css/index.css">-->
+<!--    <link rel="stylesheet" href="../../../../lib/css/bootstrap.css">-->
+<!--    <title>Gio Hang</title>-->
+<!--    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>-->
+
+<!--    <script type="text/javascript" src="../../../../lib/Js/angular-1.7.9/angular.min.js"></script>-->
+<!--    <script type="text/javascript" src="../../../../lib/Js/angular-cookies.min.js"></script>-->
+<!--    <script type="text/javascript" src="../../../../lib/Js/angular-translate/angular-translate.min.js"></script>-->
+<!--    <script type="text/javascript"-->
+<!--            src="../../../../lib/Js/angular-translate/angular-translate-loader-static-files.min.js"></script>-->
+<!--    <script type="text/javascript"-->
+<!--            src="https://cdnjs.cloudflare.com/ajax/libs/angular-sanitize/1.7.9/angular-sanitize.min.js"></script>-->
+
+<!--    <script type="text/javascript"-->
+<!--            src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-bootstrap/2.5.0/ui-bootstrap-tpls.min.js"></script>-->
+<!--    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">-->
+<!--    <script type="text/javascript" src="../../../../lib/Js/isotope.pkgd.min.js"></script>-->
+
+
+<!--    <script type="text/javascript" src="../../../js/Controller/main.js"></script>-->
+<!--    <script type="text/javascript" src="../../../../Admin/Js/MenuController.js"></script>-->
+
+<!--    <script type="text/javascript" src="../../../../Admin/Js/Constant.js"></script>-->
+<!--    <script type="text/javascript" src="../../../../Admin/Js/MenuController.js"></script>-->
+
+<!--    <script type="text/javascript" src="../../../js/Controller/slideLeftController.js"></script>-->
+<!--    <script type="text/javascript" src="../../../js/Controller/homeController.js"></script>-->
+<!--    <script type="text/javascript" src="../../../js/Controller/resumeController.js"></script>-->
+<!--    <script type="text/javascript" src="../../../js/Controller/headerController.js"></script>-->
+<!--    <script type="text/javascript" src="../../../js/Controller/anhController.js"></script>-->
+<!--&lt;!&ndash;    <script type="text/javascript" src="../../../js/Controller/giohangController.js"></script>&ndash;&gt;-->
+<!--    <script type="text/javascript" src="../../../../Admin/Js/Service/common.js"></script>-->
+
+<!--    <link rel="shortcut icon" href="favicon.ico"/>-->
+<!--</head>-->
+
+<!--<body ng-app="main">-->
+<!--&lt;!&ndash;<div class="momo"></div>&ndash;&gt;-->
+<!--&lt;!&ndash;&lt;!&ndash;BEGIN HEADER&ndash;&gt;&ndash;&gt;-->
+<!--&lt;!&ndash;<div class="" ng-include="'header.html'"></div>&ndash;&gt;-->
+<!--&lt;!&ndash;&lt;!&ndash; END HEADER&ndash;&gt;&ndash;&gt;-->
+
+<!--&lt;!&ndash; kết thúc slide bên trái &ndash;&gt;-->
+<div class="main">
+    <div class="khung max-dai table-responsive-sm" ng-controller="headerController as vm1">
+        <p ng-hide="vm1.check()">Gio hang rong</p>
+        <div class="khunggiohang" ng-show="vm1.check()">
+            <table class="table table-wrap car-table ">
+                <thead class="row-giohang">
+                <tr>
+                    <th colspan="2">San pham</th>
+                    <th>Don gia</th>
+                    <th>So luong</th>
+                    <th>Thanh tien</th>
+                    <th>Xoa</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr ng-repeat="gh in vm1.dulieu">
+                    <th>
+                        <a href=""><img class="anhgiohang"
+                                        src="{{gh.link}}"
+                                        alt=""></a>
+                    </th>
+                    <th class="cangiuachu align-middle">
+                        <a href="#" ng-bind="gh.Name"></a>
+                        <p ng-bind="gh.ChatLieu"></p>
+                        <p ng-bind="gh.Code"></p>
+                    </th>
+                    <th class="cangiuachu align-middle" ng-bind="gh.Price"></th>
+                    <th class="cangiuachu align-middle">
+                        <div class="sosanpham">
+                            <button ng-click="vm1.giamsp($index)">
+                                <span>-</span>
+                            </button>
+                            <input type="text" name="" value="{{gh.soluong}}">
+                            <button ng-click="vm1.tangsp($index)">
+                                <span>+</span>
+                            </button>
+                        </div>
+                    </th>
+                    <th class="cangiuachu align-middle" ng-bind="gh.TotalMoney">
+
+                    </th>
+                    <th class="cangiuachu align-middle">
+                        <button ng-click="vm1.DeleteProduct($index)">
+                            <i class="fa fa-trash-o" aria-hidden="true"></i>
+                        </button>
+
+                    </th>
+                </tr>
+
+
+                </tbody>
+            </table>
+            <div class="cuoigh">
+                <div class="cuoigiohang">
+                    <span>Tong tien</span>
+                    <span>1,047,000₫</span>
+                </div>
+                <div class="thanhtoan">
+                    <a href="#">
+                        Tiếp tục mua hàng
+                    </a>
+                    <div class="nut">
+                        <button type="button" class="btn btn-info ">Cap nhat</button>
+                        <button type="button" class="btn btn-info ">Thanh Toan</button>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+<!--        kết thúc list-product -->
+
+<div class="nutkeo">
+    <i class="fa fa-angle-up" aria-hidden="true"></i>
+</div>
+<!--        kết thúc nut-keo -->
+<!--END MAIN-->
+<!--<div ng-include="'footer.html'" class="footer"></div>-->
+
+<!--    kết thúc footer-->
+<!--</body>-->
+
+
+<!--</html>-->
+
+

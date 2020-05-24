@@ -1,0 +1,32 @@
+[
+  {
+    "id": 1,
+    "name": "Quan tri nguoi dung",
+    "template": "AtoAdmin/Users/UserHTMl.html",
+    "key": ""
+  },
+  {
+    "id": 2,
+    "name": "Quan tri chuc nang ",
+    "template": "AtoAdmin/Products/ProductHtml.html",
+    "key": ""
+  },
+  {
+    "id": 3,
+    "name": "Quan tri nhom quyen",
+    "template": "AtoAdmin/Users/UserHTMl.html",
+    "key": ""
+  },
+  {
+    "id": 4,
+    "name": "Quan tri san pham",
+    "template": "AtoAdmin/Users/UserHTMl.html",
+    "key": ""
+  },
+  {
+    "id": 5,
+    "name": "Quan tri kho",
+    "template": "AtoAdmin/Users/UserHTMl.html",
+    "key": ""
+  }
+]

@@ -1,0 +1,37 @@
+
+  [
+    {
+      "id": 1,
+      "link": [{
+        "anh": "http://localhost:1302/WebProducts/anh/anhctsp1.jpeg"
+      }, {
+        "anh": "http://localhost:1302/WebProducts/anh/anhctsp2.jpeg"
+      }, {
+        "anh": "http://localhost:1302/WebProducts/anh/anhsp3.jpeg"
+      }, {
+        "anh": "http://localhost:1302/WebProducts/anh/anhctsp1.jpeg"
+      }, {
+        "anh": "http://localhost:1302/WebProducts/anh/anhctsp1.jpeg"
+      }, {
+        "anh": "http://localhost:1302/WebProducts/anh/anhctsp1.jpeg"
+      }
+      ]
+    },
+    {
+      "id": 2,
+      "link": [{
+        "anh": "http://localhost:1302/WebProducts/anh/anhsp3.jpeg"
+      }, {
+        "anh": "http://localhost:1302/WebProducts/anh/anhsp3.jpeg"
+      }, {
+        "anh": "http://localhost:1302/WebProducts/anh/anhsp3.jpeg"
+      }, {
+        "anh": "http://localhost:1302/WebProducts/anh/anhsp3.jpeg"
+      }, {
+        "anh": "http://localhost:1302/WebProducts/anh/anhsp3.jpeg"
+      }, {
+        "anh": "http://localhost:1302/WebProducts/anh/anhsp3.jpeg"
+      }
+      ]
+    }
+  ]

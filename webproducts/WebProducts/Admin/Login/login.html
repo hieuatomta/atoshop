@@ -1,0 +1,61 @@
+
+<div class="container login" ng-controller="LoginController as login" id="login-form">
+    <div class="row lg">
+        <div class="col-sm-3">
+
+        </div>
+        <div class="col-sm-6">
+            <h2 class="text-sm-center text-xl-center">Đăng nhập tài khoản</h2>
+            <form action="" method="post">
+                <div class="taikhoan">
+                    <p class="text-center">TÊN ĐĂNG NHẬP </p>
+
+                    <div class="icon khungtext">
+
+                        <input class="vien khunginput" type="text" ng-model="login.userLogin.user" name="username" maxlength="200" value=""
+                               placeholder="TÊN ĐĂNG NHẬP" id="username" title="checck">
+                        <!-- <div class=""> -->
+                        <i class="fa hi icontest" id="t"></i>
+                        <!-- </div> -->
+                        <p class="noidungcanhbao an"></p>
+                    </div>
+                </div>
+                <div class="pass">
+                    <p class="text-center">MẬT KHẨU </p>
+
+                    <div class="icon khungtext">
+
+                        <input class="vien khunginput"ng-model="login.userLogin.pass" type="password" name="password" maxlength="200" value=""
+                               placeholder="MẬT KHẨU" id="password" title="checck">
+                        <!-- <div class=""> -->
+                        <i class="fa hi icontest" id="t"></i>
+                        <!-- </div> -->
+                        <p class="noidungcanhbao an"></p>
+                    </div>
+                </div>
+                <div class="col-sm-12 text-center">
+                    <div class="checkbox">
+                        <label>
+                            <input ng-model="login.checkghinho" class="vien" name="remember" id="remember" type="checkbox" checked="true">
+
+                            <label for="remember">Ghi nhớ mật khẩu</label>
+                        </label>
+                    </div>
+                    <!-- </div> -->
+
+                </div>
+                <div class="nutgui text-center" id="loginForm">
+                    <button type="button" ng-click="login.Login()" class="btn btn-primary btn-lg">Đăng nhập</button>
+                    <button type="button" ng-click="login.clear()" class="btn btn-primary btn-lg">Nhập lại</button>
+                </div>
+                <div class="doipass text-center">
+                    <a id="changePass" ng-click="login.changePass()" href="#">Đổi mật khẩu</a>
+
+                </div>
+            </form>
+        </div>
+        <div class="col-sm-3">
+
+        </div>
+    </div>
+</div>

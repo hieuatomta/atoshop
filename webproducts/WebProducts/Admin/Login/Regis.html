@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title></title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../Css/web.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/css/bootstrap.min.css" integrity="sha384-y3tfxAZXuh4HwSYylfB+J125MxIs6mR5FOHamPBG064zB+AFeWH94NdvaCBm8qnd" crossorigin="anonymous">
+  </head>
+  <body>
+    <div class="container-fluid regis">
+      <div class="row">
+        <div class="col-sm-2">
+
+        </div>
+        <div class="col-sm-8">
+          <div class="container from1">
+            <div class="col-sm-4 tr">
+              <img src="https://product.hstatic.net/1000299894/product/1eb1e40a-467e-470b-8371-54623c0eaca3_97124f429fe14d0496e86d23e77f13c7.jpeg" class="anh" alt="">
+            </div>
+            <div class="col-sm-8 hh">
+              <form action="" method="post" onsubmit=" checkdata()" class="form" >
+                <ul class="thongtin">
+                  <li class="full gi">
+                    <div class="col-sm-3">
+                      <p>Họ và tên </p>
+                    </div>
+                    <div class="col-sm-9">
+                      <div class="icon">
+
+                      <input class="vien" type="text" name="username" maxlength="200" value="" placeholder="Họ và tên - đầy đủ" id="FullName"  title="checck" onblur="ckname()">
+                        <!-- <div class=""> -->
+                        <i class="fa hi icontest" id="t"></i>
+                        <!-- </div> -->
+                        <p class="noidungcanhbao an"></p>
+                      </div>
+                    </div>
+
+                  </li>
+                  <li class="user gi">
+                    <div class="col-sm-3">
+                      <p>Tên tài khoản</p>
+                    </div>
+                    <div class="col-sm-9">
+                      <div class="icon">
+                        <input class="vien" type="text" name="username" maxlength="200" value="" placeholder="Tài khoản" id="username" onblur="tk()">
+                        <i class="fa hi icontest" id="t1"></i>
+                        <p class="noidungcanhbao an"></p>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="pass gi">
+                    <div class="col-sm-3">
+                      <p>Mật khẩu</p>
+                    </div>
+                    <div class="col-sm-9">
+                      <div class="icon">
+                        <input class="vien" type="password" name="password" value="" placeholder="Mật khẩu" id="password" onblur="pass()">
+                        <i class="fa hi icontest" id="t2"></i>
+                        <p class="noidungcanhbao an"></p>
+
+                      </div>
+                    </div>
+                  </li>
+                  <li class="repass gi">
+                    <div class="col-sm-3">
+                      <p>Nhập lại mật khẩu</p>
+                    </div>
+                    <div class="col-sm-9">
+                      <div class="icon">
+                        <input class="vien" type="password" name="repassword" value="" maxlength="51" placeholder="Nhập lại mật khẩu" id="RePassword" onblur="repass()">
+                        <i class="fa hi icontest" id="t3"></i>
+                        <p class="noidungcanhbao an"></p>
+
+                      </div>
+                    </div>
+                  </li>
+                  <li class="col-sm-12">
+                    <!-- <div class="col-sm-6 col-sm-push-3"> -->
+                      <div class="checkbox">
+                        <label>
+                          <input class="vien" type="checkbox" value="">
+                          Ghi nhớ mật khẩu
+                        </label>
+                      </div>
+                    <!-- </div> -->
+
+                  </li>
+                  <li class="gioitinh gi">
+                    <div class="col-sm-3">
+                      <p>Giới tính</p>
+                    </div>
+                    <div class="col-sm-9">
+                      <div class="icon">
+                        <label class="c-input c-radio">
+                          <input checked="checked" class="vien" id="radio1" name="radio" type="radio">
+                          <span class="c-indicator"></span>
+                          Nam
+                        </label>
+                        <label class="c-input c-radio">
+                          <input id="radio2" name="radio" type="radio">
+                          <span class="c-indicator"></span>
+                          Nữ
+                        </label>
+                        <label class="c-input c-radio">
+                          <input id="radio2" name="radio" type="radio">
+                          <span class="c-indicator"></span>
+                          Khác
+                        </label>
+                      </div>
+
+                    </div>
+
+                  </li>
+
+                  <li class="email gi">
+                    <div class="col-sm-3">
+                      <p>Email</p>
+                    </div>
+                    <div class="col-sm-9">
+                      <div class="icon">
+                        <input class="vien" type="email" name="email" maxlength="200" value="" placeholder="Email" id="Email" onblur="checkmail()" pattern="/\w+\@(\w)+\.+(\w{2,4})+$/">
+                        <i class="fa hi icontest" id="t4"></i>
+                        <p class="noidungcanhbao an"></p>
+                      </div>
+                    </div>
+
+
+                  </li>
+                  <li class="ngaysinh gi">
+                    <div class="col-sm-3">
+                      <p>
+                        Ngày sinh
+                      </p>
+                    </div>
+                    <div class="col-sm-9">
+                      <div class="icon">
+                        <input class="vien" type="date" name="" value=""id="ngaysinh" onblur="checkngaysinh()">
+                        <i class="fa hi icontest" id="t5"></i>
+
+                        <p class="noidungcanhbao an"></p>
+
+                      </div>
+                    </div>
+
+
+                  </li>
+
+                  <li class="diachi gi">
+                    <div class="col-sm-3">
+                      <p>Nhập địa chỉ </p>
+                    </div>
+                    <div class="col-sm-9">
+                      <div class="icon">
+                      <textarea name="name" rows="4" cols="30" maxlength="500"></textarea>
+                    </div>
+
+                    </div>
+                  </li>
+                  <li class="mobie gi">
+                    <div class="col-sm-3">
+                      <p>Nhập số điện thoại </p>
+                    </div>
+                    <div class="col-sm-9">
+                      <div class="icon">
+                        <input class="vien" type="tel" name="" value="" placeholder="0|+84" maxlength="10" onblur="checkdt()" id="phone">
+                        <i class="fa hi icontest" id="t6"></i>
+                        <p class="noidungcanhbao an"></p>
+
+                      </div>
+
+                    </div>
+                  </li>
+                </ul>
+                <div class="nutbtn">
+                  <button type="submit" class="btn btn-info">Submit</button>
+                  <button type="reset" class="btn btn-info">Cancel</button>
+
+                </div>
+
+              </form>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-2">
+
+        </div>
+      </div>
+
+    </div>
+
+      <script type="text/javascript" src="regis.js"></script>
+  </body>
+</html>

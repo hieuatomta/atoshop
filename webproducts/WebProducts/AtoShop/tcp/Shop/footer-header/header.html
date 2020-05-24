@@ -1,0 +1,83 @@
+
+<div class="header" ng-controller="headerController as sp">
+    <div class="maintk">
+        <input type="text" placeholder="Tìm kiếm..." class="search">
+        <button class="tat" ng-click="sp.huytimkiem()"><img src="http://localhost:1302/WebProducts/anh/close.webp" alt=""></button>
+    </div>
+    <div class="giohang">
+
+        <div class="trengiohang">
+            <h2>Giỏ hàng</h2>
+            <button class="nutX" ng-click="sp.huytimkiem()" ><i class="fa fa-times fa-2x"></i></button>
+        </div>
+        <p ng-hide="sp.check()">Gio hang rong</p>
+        <div class="giuagiohang" ng-repeat="gh in sp.dulieu" ng-show="sp.check()">
+            <div class="trengiua">
+                <div class="traigiohang">
+                    <a href="">
+                        <img class="anh"
+                             src="{{gh.link}}"
+                             alt="">
+                    </a>
+                </div>
+                <div class="trengiuagiohang">
+                    <a href="" ng-bind="gh.Name"></a>
+                    <p ng-bind="gh.ChatLieu"></p>
+                    <div class="duoigiua">
+                        <div class="sosanpham">
+                            <button ng-click="sp.giamsp($index)">
+                                <span>-</span>
+                            </button>
+                            <input type="text" name="" value="{{gh.soluong}}">
+                            <button ng-click="sp.tangsp($index)">
+                                <span>+</span>
+                            </button>
+                        </div>
+                    </div>
+                    <p ng-bind="gh.Price"></p>
+                </div>
+                <div class="trenphaigiohang">
+                    <div class="nuttang">
+                        <button ng-click="sp.DeleteProduct($index)">
+                            <i class="fa fa-trash-o" aria-hidden="true"></i>
+                        </button>
+                    </div>
+                </div>
+                <!-- <span><i class="fa fa-times fa-2x"></i></span>
+                <p>Đơn hàng của bạn đã được miễn phí vận chuyển</p> -->
+            </div>
+        </div>
+
+
+        <div class="cuoigiohang">
+            <p>Số tiền</p>
+            <button>Thanh toán</button>
+            <div class="chinhsach">
+                <a href="">Chính sách đổi trả</a>
+                <a href="">Câu hỏi thắc mắc</a>
+            </div>
+        </div>
+    </div>
+    <div class="tren-header khung max-dai">
+        <div class="timkiem">
+            <a href="">Nam</a>
+            <a href=""> Nữ</a>
+            <a href="" class="btnclick" ng-click="sp.hienthitimkiem()">Tìm kiếm</a>
+        </div>
+        <div class="tren">
+            <div class="_3gach">
+                <a class="cangiua login" href="">Đăng nhập</a>
+                <a class="icon_menu cangiua" href="#" role="button" ng-click="sp.hienthimenu()">Giỏ hàng<span ng-bind="sp.total"></span></a>
+            </div>
+        </div>
+    </div>
+    <div class=" container-fluid duoi-header">
+
+        <div class="menu row">
+            <div class="duoi khung max-dai">
+                <div data-cap="{{sp.cap}}" id="menu" class="col-sm-12 ndmenu" ng-bind-html="sp.menudacap">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

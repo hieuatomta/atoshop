@@ -1,0 +1,86 @@
+<div class="main">
+    <!--        start list-product-->
+    <div class="banner">
+        <img src="http://localhost:1302/WebProducts/anh/banner1.jpg" class="anh"/>
+    </div>
+    <div class="khung list-product max-dai" ng-controller="anhController as vm1">
+        <div class="container">
+            <header>
+                <nav>
+                    <h3 class="cangiua">XUÂN HÈ</h3>
+                    <ul>
+                        <li ng-repeat="data in vm1.data_dulieu">
+                            <button data-dulieu={{data.madulieu}} class="btn chu" ng-bind="data.tendulieu"></button>
+                        </li>
+                    </ul>
+                </nav>
+            </header>
+        </div>
+        <div class="container-fluid list-products">
+            <div class="content">
+                <ul>
+                    <li ng-repeat="anhs in vm1.anh" class={{anhs.Code}}>
+                        <div class="product-img">
+                            <a target="_blank" href="#/detail"> <img src={{anhs.link}} alt=""/></a>
+                        </div>
+                        <div class="product-title cangiua">
+                            <a href="" ng-bind="anhs.Name"></a>
+                        </div>
+                        <div class="product-price cangiua">
+                            <span ng-bind="anhs.Price"></span>
+                        </div>
+                    </li>
+                </ul>
+
+            </div>
+        </div>
+
+        <div class="nutall">
+            <button type="button" data-dulieu="all" class="btn btn-info all">Tất cả sản phẩm</button>
+
+        </div>
+
+
+    </div>
+    <!--        kết thúc list-product -->
+    <div class="banner">
+        <img src="http://localhost:1302/WebProducts/anh/nu_n_ms_image1_2.png" class="anh"/>
+        <img src="http://localhost:1302/WebProducts/anh/nu_n_ms_image2_2.png" class="anh"/>
+    </div>
+
+    <div class="nhanthongtin">
+        <h3 class="cangiua">Nhận thông tin mới từ BOO</h3>
+        <div class="mail">
+            <input type="text" class="text-sm-center" placeholder="Nhập email của bạn">
+
+        </div>
+        <div class="btn-group btn-group-toggle gioitinh" data-toggle="buttons">
+            <label class="nam btn btn-info active ">
+                <input type="radio" name="gioitinh" id="option1" autocomplete="off" checked> Nam
+            </label>
+            <label class="nu btn btn-info ">
+                <input type="radio" name="gioitinh" id="option2" autocomplete="off"> Nữ
+            </label>
+
+
+        </div>
+        <div class="dk">
+            <button type="button" class="btn btn-info">Đăng ký</button>
+        </div>
+        <div class="menu-icon">
+            <a href="#">
+                <i class="fa fa-facebook-square" aria-hidden="true"></i>
+            </a>
+            <a href="#">
+                <i class="fa fa-instagram" aria-hidden="true"></i>
+            </a>
+            <a href="#">
+                <i class="fa fa-twitter-square" aria-hidden="true"></i>
+            </a>
+        </div>
+
+    </div>
+    <div class="nutkeo">
+        <i class="fa fa-angle-up" aria-hidden="true"></i>
+    </div>
+</div>

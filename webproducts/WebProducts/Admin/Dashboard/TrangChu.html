@@ -1,0 +1,63 @@
+<div class="" ng-include="'Dashboard/Header.html'"></div>
+
+<div class="main-ad">
+    <div class="main">
+        <div class="menu-main" data-ng-controller="menuController as vm">
+            <ul class="list-menu">
+                <li class="_1muc-menu">
+                    <a href="" ng-click="vm.oneTab(10)">
+                        <i class="fa fa-home" aria-hidden="true"></i>
+                        <span>Trang chu</span>
+                    </a>
+                </li>
+                <li class="_1muc-menu" ng-click="vm.displaymenu()">
+                    <a href="" id="quantri">
+                        <i class="fa fa-bar-chart" aria-hidden="true"></i>
+                        <span>Quan tri</span>
+                    </a>
+                    <ul class="list-quantri" ng-repeat="sub_menu in vm.list_menu">
+                        <uib-tab-button handler="vm.goTo(sub_menu.id)"></uib-tab-button>
+                        <li class="_1mucquantri">
+                            <a class="off-tab" href="" ng-click="vm.goTo(sub_menu.id)">
+                                <i class="fa fa-circle" aria-hidden="true"></i>
+                                <span ng-bind="vm.getMenuText(sub_menu)"></span>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="_1muc-menu">
+                    <a href="">
+                        <i class="fa fa-money" aria-hidden="true"></i>
+                        <span>Doanh thu</span>
+                    </a>
+                </li>
+                <li class="_1muc-menu">
+                    <a href="">
+                        <i class="fa fa-area-chart" aria-hidden="true"></i>
+                        <span>Thong ke</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="tab-main" data-ng-controller="TabsController as tb">
+            <uib-tabset active="activeTabIndex">
+                <uib-tab active="activeTabIndex"
+                         ng-repeat="tab in tabs track by $index">
+                    <uib-tab-heading ng-click="tb.test($index, $event)">
+                        {{tab.title}}
+                        <div class="close" aria-label="Close" ng-click="tb.remove($index, $event)">
+                            <span aria-hidden="true">×</span>
+                        </div>
+                    </uib-tab-heading>
+                    <div class="noidungfrom" ng-include="tab.template">
+                    </div>
+                </uib-tab>
+            </uib-tabset>
+        </div>
+    </div>
+</div>
+
+
+<div class="" ng-include="'Dashboard/Footer.html'" data-ng-controller="FooterController"></div>
+
+
